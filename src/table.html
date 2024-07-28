@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de Planilha</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      table {
+        width: 70%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 0.8em;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dados da Planilha</h1>
+    <a href="../index.html">Voltar para o inicio</a>
+    <br />
+    <table id="data-table">
+      <thead>
+        <tr>
+          <!-- Ajuste os cabeçalhos conforme suas colunas -->
+          <th>Data</th>
+          <th>Nome</th>
+          <th>Produto</th>
+          <th>Valor</th>
+          <th>Tipo</th>
+          <th>Total</th>
+          <th>Saldo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas serão preenchidas dinamicamente com JavaScript -->
+      </tbody>
+    </table>
+
+    <script src="../js/table.js"></script>
+  </body>
+</html>

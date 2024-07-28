@@ -57,7 +57,7 @@
           document.getElementById('produto').value = '';
           document.getElementById('valor').value = '';
         } else {
-          alert('Erro ao enviar dados.');
+          alert('Erro ao enviar dados.' + response.status);
         }
       } catch (error) {
         console.error('Erro:', error);
@@ -65,24 +65,10 @@
       }
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const menuButton = document.getElementById('menu');
-      const sideMenu = document.getElementById('barra');
-      const verDados = document.getElementById('verDados');
-
-      verDados.addEventListener('click', ()=>{
-        window.location = 'table.html'
-      })
+  function verDados(){
+    window.location.href = './src/table.html'
+  }
   
-      menuButton.addEventListener('click', () => {
-          if (sideMenu.style.width === '0vw' || sideMenu.style.width === '') {
-              sideMenu.style.width = '60vw';
-              sideMenu.style.boxShadow = '1px 12px 50px 0px white'
-          } else {
-              sideMenu.style.width = '0vw';
-              sideMenu.style.boxShadow = 'none'
-          }
-      });
-  });
-  
-  
+  function Saidas(){
+    window.location.href = './src/saidas.html'
+  }
