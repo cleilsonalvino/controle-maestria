@@ -1,4 +1,4 @@
-const sheetdbUrl = 'https://sheetdb.io/api/v1/yfq6zjrp5riy9'
+const sheetdbUrl = 'https://sheetdb.io/api/v1/yfq6zjrp5riy9?sheet=saidas'
 async function Enviar() {
   const data = document.getElementById('data').value;
   const produtoComprado = document.getElementById('produtoComprado').value;
